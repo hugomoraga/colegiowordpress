@@ -12,7 +12,7 @@
  * @package daem_subsitios
  */
 
-get_header();
+get_header('principal');
 ?>
 
 	<main id="primary" class="site-main">

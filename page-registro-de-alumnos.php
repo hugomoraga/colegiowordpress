@@ -1,13 +1,6 @@
 <?php
 /**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * The template REGISTRO
  *
  * @package daem_subsitios
  */
@@ -16,7 +9,9 @@ get_header('principal');
 ?>
 
 	<main id="primary" class="site-main">
-
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-10 ">
 		<?php
 		while ( have_posts() ) :
 			the_post();
@@ -30,7 +25,9 @@ get_header('principal');
 
 		endwhile; // End of the loop.
 		?>
-
+        </div>
+    </div>
+</div>
 	</main><!-- #main -->
 
 <?php

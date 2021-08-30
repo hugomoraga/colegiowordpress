@@ -33,7 +33,7 @@ function add_asignaturas() {
             'capability_type'       => 'page',
 			'menu_icon'   => 'dashicons-text-page',
 			'rewrite' => [
-				'slug' => 'cursos'
+				'slug' => 'asignaturas'
 			]
 	];
 	
@@ -54,7 +54,7 @@ function add_asignaturas() {
 			'show_in_quick_edit' => false,
 			'show_in_rest' => true,
 			'show_admin_column' => true,
-			'rewrite' => array( 'slug' => 'asignaturas/nivel' ),
+			'rewrite' => array( 'slug' => 'nivel' ),
 	));
 	//initialize_terms();
 
@@ -72,8 +72,7 @@ function add_asignaturas() {
 			'show_ui'        => true,
 			'show_in_rest'   => true,
 			'show_admin_column' => true,
-			'capability_type'=> 'page',
-			'rewrite'        => array( 'slug' => 'asignaturas' ),
+			'rewrite'        => array( 'slug' => 'asignatura' ),
 	));
 }
 

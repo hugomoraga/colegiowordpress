@@ -51,6 +51,8 @@ if ( ! function_exists( 'daem_subsitios_setup' ) ) :
 		register_nav_menus(
 			array(
 				'menu-1' => esc_html__( 'Primary', 'daem_subsitios' ),
+				'menu-2' => esc_html__('Lateral', 'daem_subsitios'),
+
 			)
 		);
 
@@ -237,3 +239,10 @@ function add_subscribers_to_dropdown( $query_args, $r ) {
     $query_args['who'] = '';
     return $query_args;
 }
+
+function add_menuclass($ulclass) {
+
+	return preg_replace('/<a/', '<a class="btn rounded-pill btn-primary m-2 text-dark px-3"', $ulclass, -1);
+	}
+
+	add_filter('wp_nav_menu','add_menuclass');

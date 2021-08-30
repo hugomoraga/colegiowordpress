@@ -11,21 +11,17 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'daem_subsitios' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'daem_subsitios' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'daem_subsitios' ), 'daem_subsitios', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+<footer>
+<div class="row" style="background-image: linear-gradient(345deg, #13547a 0%, #80d0c7 100%), url(https://devdaemelquisco.cl/escuelapoetaneruda/wp-content/themes/daem_subsitios/img/bg-header.png);"> 
+
+
+
+<div class="col-12 text-center p-5">
+© 2021 
+</div>
+</div>
+</footer>
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
