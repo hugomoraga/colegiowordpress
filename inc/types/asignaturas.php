@@ -13,7 +13,9 @@ function add_asignaturas() {
     $labels = [
 		'name'                =>  'Asignaturas',
 		'singular_name'       =>  'Asignatura',
-		'menu_name'           =>  'Asignaturas'
+		'menu_name'           =>  'Asignaturas',
+		'add_new'			  =>   'Agregar Asignatura'
+
 	];
 	$args = [
 			'label'               =>  'Asignatura',
@@ -43,6 +45,7 @@ function add_asignaturas() {
 		'name' => 'nivel',
 		'singular_name' => 'Nivel',
 		'menu_name' => 'Niveles'
+
 	); 
 
 	// Now register the non-hierarchical taxonomy like tag

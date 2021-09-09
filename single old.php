@@ -10,7 +10,7 @@
 get_header('principal');
 ?>
 
-	<main id="primary " class="site-main" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/bg1.png); background-repeat: repeat; )">
+	<main id="primary" class="site-main" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/bg1.png); background-repeat: repeat; )">
 
 		<?php
 		while ( have_posts() ) :
@@ -18,6 +18,12 @@ get_header('principal');
 
 			get_template_part( 'template-parts/content', get_post_type() );
 
+			the_post_navigation(
+				array(
+					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'daem_subsitios' ) . '</span> <span class="nav-title">%title</span>',
+					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'daem_subsitios' ) . '</span> <span class="nav-title">%title</span>',
+				)
+			);
 
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :

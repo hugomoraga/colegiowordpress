@@ -2,6 +2,7 @@
 //require_once get_template_directory() . '/inc/widgets.php';
 require_once get_template_directory() . '/inc/types.php';
 require_once get_template_directory() . '/inc/types/asignaturas.php';
+require_once get_template_directory() . '/inc/types/libros.php';
 
 // $import_list('admin/menus.php',
 //              'types/red_mujer.php');
