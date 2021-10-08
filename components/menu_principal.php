@@ -14,28 +14,21 @@ $navMenu =  wp_nav_menu(array(
 
 ?>
 
-<div class="container-fluid bg-secondary">
-  <div class="d-flex justify-content-md-center">
     <nav class="navbar navbar-expand-lg ">
-      <div class="">
+<div></div>
+    <button class=" pt-2 pb-2 m-3 navbar-toggler border-2 border text-white btn btn-primary rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+     Menu <i class=" fas fa-bars fa-lg "></i>
+    </button>
 
-
-        <button class="navbar-toggler px-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fa fa-bars" style="font-size:32px"></i>
-          <?php esc_html_e('', 'daemelquisco'); ?>
-        </button>
-
-        <div class="col-12 collapse navbar-collapse " id="navbarNav">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
             <?php echo $navMenu; ?>
 
           </ul>
 
         </div>
 
-      </div>
 
     </nav>
-  </div>
-</div
+
+  

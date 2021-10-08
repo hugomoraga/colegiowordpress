@@ -46,7 +46,6 @@ if ( ! function_exists( 'daem_subsitios_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
-
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
@@ -242,7 +241,7 @@ function add_subscribers_to_dropdown( $query_args, $r ) {
 
 function add_menuclass($ulclass) {
 
-	return preg_replace('/<a/', '<a class="btn rounded-pill btn-primary m-2 text-dark px-3"', $ulclass, -1);
+	return preg_replace('/<a/', '<a class="btn rounded-pill btn-light m-2  px-3" style="min-width:120px;"', $ulclass, -1);
 	}
 
 	add_filter('wp_nav_menu','add_menuclass');

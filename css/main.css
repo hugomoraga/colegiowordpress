@@ -10863,6 +10863,22 @@ readers do not read off random characters that represent icons */
   height: 25px;
 }
 
+.bg-secondary-colegioeltotoral {
+  background-color: rgba(251, 247, 141, 0.8);
+}
+
+.bg-secondary-escuelapoetaneruda {
+  background-color: rgba(175, 11, 44, 0.8);
+}
+
+.bg-secondary-colegioelquisco {
+  background-color: rgba(223, 222, 36, 0.8);
+}
+
+.bg-secondary-educacionalclarasolvera {
+  background-color: rgba(34, 0, 255, 0.8);
+}
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -22410,16 +22426,12 @@ fieldset:disabled .btn {
 }
 
 /* Main menu */
-.menu-item {
-  padding-left: 20px;
-}
-
 .main-navigation {
   font-weight: 600;
 }
 
-.main-navigation .current-menu-item > a {
-  background-color: #daaa1c;
+.main-navigation .current-menu-item {
+  background-color: #fdc288;
 }
 
 .main-navigation a {
@@ -22660,6 +22672,11 @@ ul.social-footer2 li a {
   color: #3c6d79;
 }
 
+.btn {
+  background-color: #3c6d79;
+  color: #fff;
+}
+
 .btn:hover,
 .btn:focus,
 .btn.active {
@@ -22704,22 +22721,42 @@ input[type="submit"]:focus {
   border-color: #aaa #bbb #bbb;
 }
 
-#lateral-menu > ul {
-  list-style: none;
-  margin-left: 0px;
-  padding-left: 0px;
+.bg-colegioelquisco {
+  background-image: url(/wp-content/themes/colegiowordpress/img/bookbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#lateral-menu > ul > li {
-  background-color: #3c6d79;
-  width: 90%;
-  border-radius: 20px;
-  padding: 5px;
-  margin: 10px;
+.bg-escuelaeltotoral {
+  background-image: url(/wp-content/themes/colegiowordpress/img/bookbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#lateral-menu > ul > li > a {
-  text-decoration: none;
-  padding-left: 10px;
+.bg-educacionalclarasolvera {
+  background-image: url(/wp-content/themes/colegiowordpress/img/bg-bookclarasolvera.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(34, 0, 255, 0.8);
+}
+
+.bg-escuelapoetaneruda {
+  background-image: url(/wp-content/themes/colegiowordpress/img/bookbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lateral-escuelaeltotoral {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(137, 27, 56, 0.8)), to(rgba(251, 247, 141, 0.8))), url(/wp-content/themes/colegiowordpress/img/bg-orange.jpg);
+  background: linear-gradient(to bottom, rgba(137, 27, 56, 0.8), rgba(251, 247, 141, 0.8)), url(/wp-content/themes/colegiowordpress/img/bg-orange.jpg);
+}
+
+.lateral-escuelapoetaneruda {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(221, 51, 51, 0.8)), to(rgba(175, 11, 44, 0.8))), url(/wp-content/themes/colegiowordpress/img/bg-orange.jpg);
+  background: linear-gradient(to bottom, rgba(221, 51, 51, 0.8), rgba(175, 11, 44, 0.8)), url(/wp-content/themes/colegiowordpress/img/bg-orange.jpg);
+}
+
+.lateral-educacionalclarasolvera {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 /*# sourceMappingURL=main.css.map */

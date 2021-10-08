@@ -28,29 +28,27 @@
 		<a class="skip-link screen-reader-text"
 			href="#primary"><?php esc_html_e('Skip to content', 'daemelquisco'); ?></a>
 
-		<header id="masthead" class="site-header bg-light"
-			style='background-image: linear-gradient(345deg, #13547a 0%, #80d0c7 100%), url(<?php echo get_template_directory_uri(); ?>/img/bg-header.png);'>
-			<div class="container pt-2 pb-2 ">
-				<div class="row align-items-center">
-					<div class="col site-header__logo d-flex justify-content-center justify-content-md-start pt-1 ">
-						<?php the_custom_logo();
-						?>
-
+		<header id="masthead" class="custom-header">
+			<div class="container-fluid p-0 ">
+				<div class="row align-items-center shadow">
+					<div class="col-md-3 col-6 d-flex justify-content-center px-5 justify-content-md-start py-3">
+					<?php the_custom_logo(); ?>
 					</div>
-
-					<div class="col pt-2">
-						<div class="search-container">
-
-
-						</div>
+					<div class="col-md-6 col-12 order-3 order-md-2 text-white">
+					<?php include get_template_directory() .'/components/menu_principal.php'; ?>
 					</div>
+					<div class="col-md-3 col-6 order-2 order-md-3">
 
-					<div class="col d-flex justify-content-end align-item-center">
+					<div class="col d-flex justify-content-center align-item-center">
 						<div class="shadow-sm rounded-pill">
 							<?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
 
 						</div>
 					</div>
+					</div>
+				
+
+			
 
 				</div>
 			</div>
@@ -66,6 +64,5 @@
 
 
 
-			<?php include get_template_directory() .'/components/menu_principal.php'; ?>
 			<!-- #site-navigation -->
 		</header><!-- #masthead -->

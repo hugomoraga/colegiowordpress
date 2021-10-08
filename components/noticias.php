@@ -2,7 +2,6 @@
 <?php 
 // the query
 $the_query = new WP_Query( array(
-'category_name' => 'Noticias',
 'posts_per_page' => 3,
 )); 
 ?>
@@ -10,7 +9,7 @@ $the_query = new WP_Query( array(
 
 <div class="col-md-12 col-sm-12">
     <section id="news_list" class="p-4">
-        <div class="shadow p-3 bg-white">
+        <div class="shadow p-3" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/bg-c3.jpg); background-repeat: no-repeat; background-size: 200%;)">
             <div class="font-title fs-2 text-info">Noticias </div>
             <p></p>
             <ul class="news_list">
@@ -20,7 +19,7 @@ $the_query = new WP_Query( array(
                 <li class="pb-3">
                 <div class="hvr-underline-from-left p-2 card border-0 shadow m-2 bg-primary">
                     <div class="row g-0">
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <div class="img-fluid p-0">
                                 <a href="<?php the_permalink(); ?>">
                                     <?php if (has_post_thumbnail( $post->ID ) ): ?>
@@ -33,7 +32,7 @@ $the_query = new WP_Query( array(
                             </div>
                         </div>
 
-                        <div class="col-md-8">
+                        <div class="col-md-9">
                             <h4 class="text-capitalize text-truncate pl-3"> <?php the_title(); ?>
                             </h4>
                             <p class="pl-3"> <?php the_excerpt(); ?>
