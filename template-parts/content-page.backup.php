@@ -4,32 +4,39 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package daemelquisco
+ * @package daem_subsitios
  */
 
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="text-white text-center p-3 m-0 bg-secondary">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
-	<div class="entry-content p-3" style="height: 60vh; background-image: url(https://daemelquisco.cl/escuelaeltotoral/wp-content/themes/colegiowordpress/img/bg1.png); background-repeat: repeat; )">
-	
+
+	<?php daem_subsitios_post_thumbnail(); ?>
+
+	<div class="entry-content">
 		<?php
 		the_content();
 
-
+		wp_link_pages(
+			array(
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'daem_subsitios' ),
+				'after'  => '</div>',
+			)
+		);
 		?>
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
-	<footer class="entry-footer">
-		<?php
+		<footer class="entry-footer">
+			<?php
 			edit_post_link(
 				sprintf(
 					wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'daemelquisco' ),
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'daem_subsitios' ),
 						array(
 							'span' => array(
 								'class' => array(),
@@ -42,6 +49,6 @@
 				'</span>'
 			);
 			?>
-	</footer><!-- .entry-footer -->
+		</footer><!-- .entry-footer -->
 	<?php endif; ?>
 </article><!-- #post-<?php the_ID(); ?> -->

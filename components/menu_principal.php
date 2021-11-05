@@ -15,17 +15,16 @@ $navMenu =  wp_nav_menu(array(
 ?>
 
     <nav class="navbar navbar-expand-lg ">
-<div></div>
     <button class=" pt-2 pb-2 m-3 navbar-toggler border-2 border text-white btn btn-primary rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
      Menu <i class=" fas fa-bars fa-lg "></i>
     </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mr-auto">
+          <div class="w-100">
+            <ul class="navbar-nav justify-content-center">
             <?php echo $navMenu; ?>
-
-          </ul>
-
+            </ul>
+          </div>
         </div>
 
 

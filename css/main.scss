@@ -55,8 +55,8 @@ $primary-escuelapoetaneruda: rgba(221, 51, 51, 0.8);
 $secondary-escuelapoetaneruda: rgba(175, 11, 44, 0.8);
 $primary-colegioelquisco: rgba(42, 98, 170, 0.8);
 $secondary-colegioelquisco: rgba(223, 222, 36, 0.8);
-$primary-educacionalclarasolvera: rgba(234, 195, 105, 0.8);
-$secondary-educacionalclarasolvera: rgba(34, 0, 255, 0.8);
+$primary-educacionalclarasolovera: rgba(234, 195, 105, 0.8);
+$secondary-educacionalclarasolovera: rgba(34, 0, 255, 0.8);
 
 .bg-secondary-colegioeltotoral {
   background-color: $secondary-colegioeltotoral;
@@ -70,8 +70,8 @@ $secondary-educacionalclarasolvera: rgba(34, 0, 255, 0.8);
   background-color: $secondary-colegioelquisco;
 }
 
-.bg-secondary-educacionalclarasolvera {
-  background-color: $secondary-educacionalclarasolvera;
+.bg-secondary-educacionalclarasolovera {
+  background-color: $secondary-educacionalclarasolovera;
 }
 
 //  CREATE OWN MAP
@@ -426,11 +426,11 @@ input[type="submit"]:focus {
   background-size: cover;
 }
 
-.bg-educacionalclarasolvera {
-  background-image: url(/wp-content/themes/colegiowordpress/img/bg-bookclarasolvera.png);
+.bg-educacionalclarasolovera {
+  background-image: url(/wp-content/themes/colegiowordpress/img/bg-bookclarasolovera.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: $secondary-educacionalclarasolvera;
+  background-color: $secondary-educacionalclarasolovera;
 }
 
 .bg-escuelapoetaneruda {
@@ -457,6 +457,6 @@ input[type="submit"]:focus {
     url(/wp-content/themes/colegiowordpress/img/bg-orange.jpg);
 }
 
-.lateral-educacionalclarasolvera {
+.lateral-educacionalclarasolovera {
   background-color: rgba(0, 0, 0, 0.1);
 }

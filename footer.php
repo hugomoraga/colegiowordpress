@@ -12,13 +12,9 @@
 ?>
 
 <footer>
-<div class="row" style="background-image: linear-gradient(345deg, #13547a 0%, #80d0c7 100%), url(https://devdaemelquisco.cl/escuelapoetaneruda/wp-content/themes/daem_subsitios/img/bg-header.png);"> 
-
-
-
-<div class="col-12 text-center p-5">
-© 2021 
-</div>
+<div class=" d-flex align-items-center justify-content-center" style=" height:50px; background-image: linear-gradient(345deg, #13547a 0%, #80d0c7 100%)"> 
+   
+       <div class="text-white">  <?php bloginfo( 'name' ); ?> - 2021 </div>
 </div>
 </footer>
 

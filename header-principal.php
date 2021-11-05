@@ -30,8 +30,8 @@
 
 		<header id="masthead" class="custom-header">
 			<div class="container-fluid p-0 ">
-				<div class="row align-items-center shadow">
-					<div class="col-md-3 col-6 d-flex justify-content-center px-5 justify-content-md-start py-3">
+				<div class="row align-items-center shadow m-0">
+					<div class="col-md-3 col-6 d-flex justify-content-center px-5  py-3">
 					<?php the_custom_logo(); ?>
 					</div>
 					<div class="col-md-6 col-12 order-3 order-md-2 text-white">

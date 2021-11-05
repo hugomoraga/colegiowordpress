@@ -10875,7 +10875,7 @@ readers do not read off random characters that represent icons */
   background-color: rgba(223, 222, 36, 0.8);
 }
 
-.bg-secondary-educacionalclarasolvera {
+.bg-secondary-educacionalclarasolovera {
   background-color: rgba(34, 0, 255, 0.8);
 }
 
@@ -22733,8 +22733,8 @@ input[type="submit"]:focus {
   background-size: cover;
 }
 
-.bg-educacionalclarasolvera {
-  background-image: url(/wp-content/themes/colegiowordpress/img/bg-bookclarasolvera.png);
+.bg-educacionalclarasolovera {
+  background-image: url(/wp-content/themes/colegiowordpress/img/bg-bookclarasolovera.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(34, 0, 255, 0.8);
@@ -22756,7 +22756,7 @@ input[type="submit"]:focus {
   background: linear-gradient(to bottom, rgba(221, 51, 51, 0.8), rgba(175, 11, 44, 0.8)), url(/wp-content/themes/colegiowordpress/img/bg-orange.jpg);
 }
 
-.lateral-educacionalclarasolvera {
+.lateral-educacionalclarasolovera {
   background-color: rgba(0, 0, 0, 0.1);
 }
 /*# sourceMappingURL=main.css.map */
